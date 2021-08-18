@@ -22,12 +22,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufc-Sl-hNf">
+                                <rect key="frame" x="480" y="444.5" width="64" height="30"/>
+                                <state key="normal" title="Press me"/>
+                                <connections>
+                                    <action selector="pressMeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FZs-SX-Q5N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="so4-jN-zrd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1m5-50-8eG"/>
+                            <constraint firstItem="Ufc-Sl-hNf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4es-t0-nlG"/>
                             <constraint firstItem="so4-jN-zrd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HNV-XC-Nhc"/>
+                            <constraint firstItem="Ufc-Sl-hNf" firstAttribute="top" secondItem="so4-jN-zrd" secondAttribute="bottom" constant="50" id="bJz-oD-GMt"/>
                         </constraints>
                     </view>
                 </viewController>
