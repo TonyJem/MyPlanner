@@ -1,25 +1,34 @@
 import UIKit
+import SnapKit
 
 class SwipingController: UICollectionViewController {
     
-    let headerView: UIView = {
+    private lazy var headerView: UIView = {
         let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .systemGray
+        self.view.addSubview(view)
         return view
     }()
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.backgroundColor = .green
         
-        view.addSubview(headerView)
-        
-        headerView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        headerView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        headerView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        headerView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        setupHeader()
     }
+}
+
+// MARK: - Private Methods:
+private extension SwipingController {
     
+    func setupHeader() {
+        headerView.snp.makeConstraints { make in
+            make.leading.equalToSuperview()
+            make.top.equalToSuperview()
+            make.trailing.equalToSuperview()
+            make.height.equalTo(50)
+        }
+    }
 }
