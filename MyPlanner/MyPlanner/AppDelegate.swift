@@ -1,3 +1,5 @@
+// To integrate SnapKit into Xcode: https://github.com/SnapKit/SnapKit.git
+
 import UIKit
 
 @UIApplicationMain
