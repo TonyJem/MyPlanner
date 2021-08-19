@@ -10,13 +10,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.makeKeyAndVisible()
         
-//        let layout = UICollectionViewFlowLayout()
+        let layout = UICollectionViewFlowLayout()
 //        layout.scrollDirection = .horizontal
-//        let swipingController = SwipingController(collectionViewLayout: layout)
-        
-        let randomViewController = UIViewController()
-        randomViewController.view.backgroundColor = .purple
-        window?.rootViewController = randomViewController
+        let swipingController = SwipingController(collectionViewLayout: layout)
+        window?.rootViewController = swipingController
         
         return true
     }
