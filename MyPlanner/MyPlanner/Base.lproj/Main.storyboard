@@ -25,9 +25,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufc-Sl-hNf">
                                 <rect key="frame" x="480" y="444.5" width="64" height="30"/>
                                 <state key="normal" title="Press me"/>
-                                <connections>
-                                    <action selector="pressMeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FZs-SX-Q5N"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
