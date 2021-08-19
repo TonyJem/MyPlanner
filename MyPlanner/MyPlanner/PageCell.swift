@@ -22,7 +22,12 @@ class PageCell: UICollectionViewCell {
     }
     
     private func setupLayout() {
-        
+        mainContainerView.snp.makeConstraints { make in
+            make.leading.equalToSuperview()
+            make.top.equalToSuperview().offset(50)
+            make.trailing.equalToSuperview()
+            make.height.equalTo(50)
+        }
     }
     
 }
