@@ -10,6 +10,13 @@ class SwipingController: UICollectionViewController {
         return view
     }()
     
+    private lazy var footerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .purple
+        self.view.addSubview(view)
+        return view
+    }()
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +24,7 @@ class SwipingController: UICollectionViewController {
         collectionView.backgroundColor = .green
         
         setupHeader()
+        setupFooter()
     }
 }
 
@@ -28,7 +36,16 @@ private extension SwipingController {
             make.leading.equalToSuperview()
             make.top.equalToSuperview()
             make.trailing.equalToSuperview()
-            make.height.equalTo(50)
+            make.height.equalTo(70)
+        }
+    }
+    
+    func setupFooter() {
+        footerView.snp.makeConstraints { make in
+            make.leading.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.trailing.equalToSuperview()
+            make.height.equalTo(70)
         }
     }
 }
