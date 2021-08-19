@@ -22,11 +22,29 @@ class SwipingController: UICollectionViewController {
         super.viewDidLoad()
         
         collectionView.backgroundColor = .green
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
         
         setupHeader()
         setupFooter()
     }
+    
 }
+
+// MARK: - CollectionView's Data Source
+extension SwipingController {
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
+        
+        return cell
+    }
+    
+}
+
 
 // MARK: - Private Methods:
 private extension SwipingController {
