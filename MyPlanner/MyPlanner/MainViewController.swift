@@ -15,8 +15,8 @@ class MainViewController: UIViewController {
         return view
     }()
     
-    private let swipeView: UIView = {
-        let view = UIView()
+    private let swipeView: UICollectionView = {
+        let view = SwipeView()
         view.backgroundColor = .yellow
         return view
     }()

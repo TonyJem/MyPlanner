@@ -13,6 +13,8 @@ class SwipeView: UICollectionView {
         backgroundColor = .cyan
         
         dataSource = self
+        
+        register(PageCell.self, forCellWithReuseIdentifier: "cellID")
     }
     
     required init?(coder: NSCoder) {
@@ -27,6 +29,7 @@ extension SwipeView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell = dequeueReusableCell(withReuseIdentifier: "cellID", for: indexPath) as! PageCell
+        return cell
     }
 }
