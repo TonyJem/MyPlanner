@@ -1,5 +1,6 @@
 import UIKit
 import SnapKit
+import FSCalendar
 
 class PageCell: UICollectionViewCell {
     
@@ -16,10 +17,10 @@ class PageCell: UICollectionViewCell {
         return view
     }()
     
-    private let calendarView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .brown
-        return view
+    private let calendarView: FSCalendar = {
+        let calendar = FSCalendar()
+        calendar.backgroundColor = .white
+        return calendar
     }()
     
     private let tableView: UIView = {
