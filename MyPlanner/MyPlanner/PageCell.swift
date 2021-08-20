@@ -5,7 +5,6 @@ class PageCell: UICollectionViewCell {
     
     private let mainContainerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .systemPink
         return view
     }()
     

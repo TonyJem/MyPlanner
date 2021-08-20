@@ -11,9 +11,12 @@ class SwipeView: UICollectionView {
         dataSource = self
         delegate = self
         
-        isPagingEnabled = true
-        
         register(PageCell.self, forCellWithReuseIdentifier: "cellID")
+        
+        isPagingEnabled = true
+        showsHorizontalScrollIndicator = false
+        showsVerticalScrollIndicator = false
+        
     }
     
     required init?(coder: NSCoder) {
@@ -24,11 +27,14 @@ class SwipeView: UICollectionView {
 // MARK: - SwipeView DataSource
 extension SwipeView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return 88
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = dequeueReusableCell(withReuseIdentifier: "cellID", for: indexPath) as! PageCell
+        
+        cell.backgroundColor = indexPath.item % 2 == 0 ? .red : .blue
+        
         return cell
     }
 }
