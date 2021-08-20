@@ -3,6 +3,7 @@ import SnapKit
 
 class PageCell: UICollectionViewCell {
     
+    // MARK: - Views
     private let calendarContainerView: UIView = {
         let view = UIView()
         view.backgroundColor = .systemPink
@@ -27,6 +28,7 @@ class PageCell: UICollectionViewCell {
         return view
     }()
     
+    // MARK: - init
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -37,8 +39,12 @@ class PageCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-        
-    private func setupLayout() {
+}
+
+// MARK: - Setup Layout
+private extension PageCell {
+    
+    func setupLayout() {
         addSubview(calendarContainerView)
         calendarContainerView.snp.makeConstraints { make in
             make.leading.equalToSuperview()
@@ -71,5 +77,4 @@ class PageCell: UICollectionViewCell {
             make.bottom.equalToSuperview()
         }
     }
-    
 }
