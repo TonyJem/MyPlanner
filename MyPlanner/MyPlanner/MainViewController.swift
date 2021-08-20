@@ -14,18 +14,26 @@ class MainViewController: UIViewController {
         return view
     }()
     
+    private let swipeView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .yellow
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .yellow
+        view.backgroundColor = .green
         
         view.addSubview(headerView)
         setupHeader()
         
         view.addSubview(footerView)
         setupFooter()
+        
+        view.addSubview(swipeView)
+        setupSwipeView()
     }
-    
 }
 
 // MARK: - Private Methods:
@@ -49,4 +57,12 @@ private extension MainViewController {
         }
     }
     
+    func setupSwipeView() {
+        swipeView.snp.makeConstraints { make in
+            make.leading.equalToSuperview()
+            make.top.equalTo(headerView.snp.bottom).offset(10)
+            make.trailing.equalToSuperview()
+            make.bottom.equalTo(footerView.snp.top).offset(-10)
+        }
+    }
 }
