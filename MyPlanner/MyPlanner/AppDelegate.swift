@@ -1,4 +1,6 @@
-// To integrate SnapKit into Xcode: https://github.com/SnapKit/SnapKit.git
+// To integrate FrameWorks into Xcode
+// SnapKit: https://github.com/SnapKit/SnapKit.git
+// FSCalendar: https://github.com/WenchaoD/FSCalendar.git
 
 import UIKit
 
