@@ -11,6 +11,7 @@
 		3A11B64B26CEAB3D00BD566E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3A11B64A26CEAB3D00BD566E /* SnapKit */; };
 		3A11B64D26CEB0EB00BD566E /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11B64C26CEB0EB00BD566E /* PageCell.swift */; };
 		3A11B64F26CF6EAB00BD566E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11B64E26CF6EAB00BD566E /* MainViewController.swift */; };
+		3A11B65126CF748000BD566E /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11B65026CF748000BD566E /* SwipeView.swift */; };
 		3AAEAAF026CC34FF0044B0D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAEAAEF26CC34FF0044B0D4 /* AppDelegate.swift */; };
 		3AAEAAF926CC35020044B0D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AAEAAF826CC35020044B0D4 /* Assets.xcassets */; };
 		3AAEAAFC26CC35020044B0D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAEAAFA26CC35020044B0D4 /* LaunchScreen.storyboard */; };
@@ -20,6 +21,7 @@
 		3A11B64726CEA04400BD566E /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		3A11B64C26CEB0EB00BD566E /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		3A11B64E26CF6EAB00BD566E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3A11B65026CF748000BD566E /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		3AAEAAEC26CC34FF0044B0D4 /* MyPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAEAAEF26CC34FF0044B0D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AAEAAF826CC35020044B0D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				3A11B64726CEA04400BD566E /* SwipingController.swift */,
 				3A11B64E26CF6EAB00BD566E /* MainViewController.swift */,
 				3A11B64C26CEB0EB00BD566E /* PageCell.swift */,
+				3A11B65026CF748000BD566E /* SwipeView.swift */,
 				3AAEAAF826CC35020044B0D4 /* Assets.xcassets */,
 				3AAEAAFA26CC35020044B0D4 /* LaunchScreen.storyboard */,
 				3AAEAAFD26CC35020044B0D4 /* Info.plist */,
@@ -147,6 +150,7 @@
 				3AAEAAF026CC34FF0044B0D4 /* AppDelegate.swift in Sources */,
 				3A11B64826CEA04400BD566E /* SwipingController.swift in Sources */,
 				3A11B64D26CEB0EB00BD566E /* PageCell.swift in Sources */,
+				3A11B65126CF748000BD566E /* SwipeView.swift in Sources */,
 				3A11B64F26CF6EAB00BD566E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
