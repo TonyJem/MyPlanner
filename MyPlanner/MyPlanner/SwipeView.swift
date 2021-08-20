@@ -3,8 +3,6 @@ import SnapKit
 
 class SwipeView: UICollectionView {
     
-    let pages = [""]
-    
     init() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
