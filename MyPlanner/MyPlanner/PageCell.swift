@@ -3,10 +3,9 @@ import SnapKit
 
 class PageCell: UICollectionViewCell {
     
-    private lazy var mainContainerView: UIView = {
+    private let mainContainerView: UIView = {
         let view = UIView()
         view.backgroundColor = .systemPink
-        addSubview(view)
         return view
     }()
     
@@ -14,6 +13,7 @@ class PageCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        addSubview(mainContainerView)
         setupLayout()
     }
     
@@ -24,9 +24,9 @@ class PageCell: UICollectionViewCell {
     private func setupLayout() {
         mainContainerView.snp.makeConstraints { make in
             make.leading.equalToSuperview()
-            make.top.equalToSuperview().offset(50)
+            make.top.equalToSuperview()
             make.trailing.equalToSuperview()
-            make.height.equalTo(50)
+            make.bottom.equalToSuperview()
         }
     }
     
