@@ -27,7 +27,7 @@ class SwipeView: UICollectionView {
 // MARK: - SwipeView DataSource
 extension SwipeView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 88
+        return 888
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -20,6 +20,8 @@ class PageCell: UICollectionViewCell {
     private let calendarView: FSCalendar = {
         let calendar = FSCalendar()
         calendar.backgroundColor = .white
+        calendar.headerHeight = 0
+        calendar.firstWeekday = 2
         return calendar
     }()
     
