@@ -1,7 +1,10 @@
 import UIKit
 import SnapKit
+import FSCalendar
 
 class MainViewController: UIViewController {
+    
+    var formatter = DateFormatter()
     
     private let headerView: UIView = {
         let view = UIView()
@@ -65,5 +68,14 @@ private extension MainViewController {
             make.trailing.equalToSuperview()
             make.bottom.equalTo(footerView.snp.top).offset(-10)
         }
+    }
+}
+
+// MARK: - Calendar Delegate:
+extension MainViewController: FSCalendarDelegate {
+    
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        formatter.dateFormat = "dd-MMM-yyyy"
+        print("🟢 Date Selected = \(formatter.string(from: date))")
     }
 }

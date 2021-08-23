@@ -16,7 +16,6 @@ class SwipeView: UICollectionView {
         isPagingEnabled = true
         showsHorizontalScrollIndicator = false
         showsVerticalScrollIndicator = false
-        
     }
     
     required init?(coder: NSCoder) {
