@@ -5,8 +5,13 @@ class DayView: UIView {
     
     private let weekDayLabel: UILabel = {
         let label = UILabel()
-        label.text = "Saturday"
+        
+        label.backgroundColor = UIColor.clear //TODO: set a light color to see the frame
         label.textAlignment = .center
+        label.font = UIFont(name: "Helvetica Neue Thin", size: 26)
+        label.textColor = .systemGray
+        label.text = "Saturday"
+
         return label
     }()
     
