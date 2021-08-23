@@ -21,6 +21,7 @@ extension UIViewController {
     }
 }
 
+//TODO: Find better sollution for finding topMostViewController (without warning on keyWindow)
 extension UIApplication {
     func topMostViewController() -> UIViewController? {
         return self.keyWindow?.rootViewController?.topMostViewController()
@@ -53,7 +54,7 @@ class PageCell: UICollectionViewCell {
         
         let currentVC = UIApplication.shared.topMostViewController()
         
-        calendar.delegate = currentVC as! FSCalendarDelegate
+        calendar.delegate = currentVC as? FSCalendarDelegate
         
         
         let appearance = calendar.appearance
