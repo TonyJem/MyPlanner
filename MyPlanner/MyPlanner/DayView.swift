@@ -30,7 +30,7 @@ class DayView: UIView {
         
         label.backgroundColor = UIColor.clear // TODO: set a light color to see the frame
         label.textAlignment = .center
-        label.font = UIFont(name: "Helvetica Neue Thin", size: 16)
+        label.font = UIFont(name: "Helvetica Neue", size: 14)
         label.textColor = .systemGray
         label.text = "226TH DAY, 139 LEFT, WEEK 32"
         
