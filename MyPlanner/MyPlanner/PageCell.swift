@@ -22,9 +22,14 @@ class PageCell: UICollectionViewCell {
         calendar.backgroundColor = .white
         calendar.headerHeight = 0
         calendar.firstWeekday = 2
-        calendar.appearance.todayColor = .orange
-        calendar.appearance.todaySelectionColor = .orange
-        calendar.appearance.selectionColor = .systemGray3
+        
+        let appearance = calendar.appearance
+        appearance.weekdayTextColor = .systemGray
+        appearance.weekdayFont = UIFont(name: "Helvetica Neue", size: 12)
+        appearance.todayColor = .orange
+        appearance.todaySelectionColor = .orange
+        appearance.selectionColor = .systemGray3
+        
         calendar.scrollEnabled = false
         return calendar
     }()
