@@ -1,4 +1,5 @@
 import UIKit
+import SnapKit
 
 class DayView: UIView {
     
@@ -36,7 +37,30 @@ class DayView: UIView {
 
 // MARK: - Setup Layout
 private extension DayView {
+    
     func setupLayout() {
+        addSubview(weekDayLabel)
+        weekDayLabel.snp.makeConstraints { make in
+            make.leading.equalToSuperview()
+            make.top.equalToSuperview()
+            make.trailing.equalToSuperview()
+            make.height.equalTo(50)
+        }
         
+        addSubview(dateLabel)
+        dateLabel.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.width.equalTo(150)
+            make.height.equalTo(150)
+        }
+        
+        addSubview(descritpionLabel)
+        descritpionLabel.snp.makeConstraints { make in
+            make.leading.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.trailing.equalToSuperview()
+            make.height.equalTo(50)
+        }
     }
 }
