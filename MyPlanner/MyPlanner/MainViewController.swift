@@ -71,6 +71,18 @@ private extension MainViewController {
     }
 }
 
+// MARK: - Calendar DataSource:
+extension MainViewController: FSCalendarDataSource {
+    
+    func minimumDate(for calendar: FSCalendar) -> Date {
+        return Date().addingTimeInterval((24*60*60)*365*3*(-1))
+    }
+    
+    func maximumDate(for calendar: FSCalendar) -> Date {
+        return Date().addingTimeInterval((24*60*60)*365*3)
+    }
+}
+
 // MARK: - Calendar Delegate:
 extension MainViewController: FSCalendarDelegate {
     

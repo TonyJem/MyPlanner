@@ -51,11 +51,10 @@ class PageCell: UICollectionViewCell {
 //        TODO: localization option if is necessary
 //        calendar.locale = Locale(identifier: "lt")
         
+        let currentViewController = UIApplication.shared.topMostViewController()
         
-        let currentVC = UIApplication.shared.topMostViewController()
-        
-        calendar.delegate = currentVC as? FSCalendarDelegate
-        
+        calendar.delegate = currentViewController as? FSCalendarDelegate
+        calendar.dataSource = currentViewController as? FSCalendarDataSource
         
         let appearance = calendar.appearance
         appearance.weekdayTextColor = .systemGray
