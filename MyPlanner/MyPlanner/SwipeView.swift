@@ -27,7 +27,10 @@ class SwipeView: UICollectionView {
 // MARK: - SwipeView DataSource
 extension SwipeView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 888
+        let year = 365
+        let totalyYears = 6
+        
+        return totalyYears * year // 365 * 6 = 2190
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

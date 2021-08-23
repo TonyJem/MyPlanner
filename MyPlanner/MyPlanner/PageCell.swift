@@ -22,6 +22,8 @@ class PageCell: UICollectionViewCell {
         calendar.backgroundColor = .white
         calendar.headerHeight = 0
         calendar.firstWeekday = 2
+//        TODO: localization option if is necessary
+//        calendar.locale = Locale(identifier: "lt")
         
         let appearance = calendar.appearance
         appearance.weekdayTextColor = .systemGray
