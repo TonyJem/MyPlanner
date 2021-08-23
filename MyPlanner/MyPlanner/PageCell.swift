@@ -11,9 +11,9 @@ class PageCell: UICollectionViewCell {
         return view
     }()
     
-    private let dateView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .cyan
+    private let dateView: DayView = {
+        let view = DayView()
+        view.backgroundColor = .white
         return view
     }()
     

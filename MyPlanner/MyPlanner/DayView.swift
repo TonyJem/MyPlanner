@@ -6,18 +6,21 @@ class DayView: UIView {
     private let weekDayLabel: UILabel = {
         let label = UILabel()
         label.text = "Saturday"
+        label.textAlignment = .center
         return label
     }()
     
     private let dateLabel: UILabel = {
         let label = UILabel()
         label.text = "14"
+        label.textAlignment = .center
         return label
     }()
     
     private let descritpionLabel: UILabel = {
         let label = UILabel()
         label.text = "226TH DAY, 139 LEFT, WEEK 32"
+        label.textAlignment = .center
         return label
     }()
     
