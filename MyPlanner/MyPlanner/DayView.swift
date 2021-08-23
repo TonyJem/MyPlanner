@@ -19,7 +19,7 @@ class DayView: UIView {
         let label = UILabel()
         label.backgroundColor = UIColor.clear // TODO: set a light color to see the frame
         label.textAlignment = .center
-        label.font = UIFont(name: "Helvetica Neue UltraLight", size: 115)
+        label.font = UIFont(name: "Helvetica Neue UltraLight", size: 130)
         label.textColor = .systemOrange
         label.text = "14"
         return label
@@ -30,7 +30,7 @@ class DayView: UIView {
         
         label.backgroundColor = UIColor.clear // TODO: set a light color to see the frame
         label.textAlignment = .center
-        label.font = UIFont(name: "Helvetica Neue", size: 16)
+        label.font = UIFont(name: "Helvetica Neue Thin", size: 16)
         label.textColor = .systemGray
         label.text = "226TH DAY, 139 LEFT, WEEK 32"
         
@@ -60,13 +60,13 @@ private extension DayView {
             make.leading.equalToSuperview()
             make.top.equalToSuperview()
             make.trailing.equalToSuperview()
-            make.height.equalTo(50)
+            make.height.equalTo(30)
         }
         
         addSubview(dateLabel)
         dateLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.centerY.equalTo(self.snp.centerY).offset(-15)
+            make.centerY.equalTo(self.snp.centerY).offset(-10)
             make.width.equalTo(200)
             make.height.equalTo(130)
         }
@@ -76,7 +76,7 @@ private extension DayView {
             make.leading.equalToSuperview()
             make.bottom.equalToSuperview()
             make.trailing.equalToSuperview()
-            make.height.equalTo(50)
+            make.height.equalTo(55)
         }
     }
 }
