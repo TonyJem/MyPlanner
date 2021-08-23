@@ -12,9 +12,9 @@ class DayView: UIView {
     
     private let dateLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = UIColor.systemGreen //set a light color to see the frame
+        label.backgroundColor = UIColor.clear //set a light color to see the frame
         label.textAlignment = .center
-        label.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 120)
+        label.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 130)
         label.textColor = .systemOrange
         label.text = "14"
         return label
