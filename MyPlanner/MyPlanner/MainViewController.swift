@@ -75,11 +75,11 @@ private extension MainViewController {
 extension MainViewController: FSCalendarDataSource {
     
     func minimumDate(for calendar: FSCalendar) -> Date {
-        return Date().addingTimeInterval((24*60*60)*365*3*(-1))
+        return Date().addingTimeInterval(Constants.secondsPerDay * Constants.daysInCalendar * (-0.5))
     }
     
     func maximumDate(for calendar: FSCalendar) -> Date {
-        return Date().addingTimeInterval((24*60*60)*365*3)
+        return Date().addingTimeInterval(Constants.secondsPerDay * Constants.daysInCalendar * (0.5))
     }
 }
 
