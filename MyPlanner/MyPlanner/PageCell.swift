@@ -57,7 +57,7 @@ private extension PageCell {
             make.leading.equalToSuperview()
             make.top.equalToSuperview()
             make.width.equalToSuperview().multipliedBy(0.5)
-            make.height.equalTo(200)
+            make.height.equalTo(250)
         }
         
         calendarContainerView.addSubview(dateView)

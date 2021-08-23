@@ -12,8 +12,11 @@ class DayView: UIView {
     
     private let dateLabel: UILabel = {
         let label = UILabel()
-        label.text = "14"
+        label.backgroundColor = UIColor.systemGreen //set a light color to see the frame
         label.textAlignment = .center
+        label.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 120)
+        label.textColor = .systemOrange
+        label.text = "14"
         return label
     }()
     
@@ -53,9 +56,9 @@ private extension DayView {
         addSubview(dateLabel)
         dateLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview()
-            make.width.equalTo(150)
-            make.height.equalTo(150)
+            make.centerY.equalTo(self.snp.centerY).offset(0)
+            make.width.equalTo(130)
+            make.height.equalTo(120)
         }
         
         addSubview(descritpionLabel)
