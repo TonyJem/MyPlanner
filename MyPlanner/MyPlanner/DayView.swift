@@ -6,7 +6,7 @@ class DayView: UIView {
     private let weekDayLabel: UILabel = {
         let label = UILabel()
         
-        label.backgroundColor = UIColor.clear //TODO: set a light color to see the frame
+        label.backgroundColor = UIColor.clear // TODO: set a light color to see the frame
         label.textAlignment = .center
         label.font = UIFont(name: "Helvetica Neue Thin", size: 26)
         label.textColor = .systemGray
@@ -17,7 +17,7 @@ class DayView: UIView {
     
     private let dateLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = UIColor.clear //TODO: set a light color to see the frame
+        label.backgroundColor = UIColor.clear // TODO: set a light color to see the frame
         label.textAlignment = .center
         label.font = UIFont(name: "Helvetica Neue UltraLight", size: 115)
         label.textColor = .systemOrange
@@ -27,8 +27,13 @@ class DayView: UIView {
     
     private let descritpionLabel: UILabel = {
         let label = UILabel()
-        label.text = "226TH DAY, 139 LEFT, WEEK 32"
+        
+        label.backgroundColor = UIColor.clear // TODO: set a light color to see the frame
         label.textAlignment = .center
+        label.font = UIFont(name: "Helvetica Neue", size: 16)
+        label.textColor = .systemGray
+        label.text = "226TH DAY, 139 LEFT, WEEK 32"
+        
         return label
     }()
     
