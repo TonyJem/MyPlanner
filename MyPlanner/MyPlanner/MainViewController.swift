@@ -6,6 +6,14 @@ class MainViewController: UIViewController {
     
     var formatter = DateFormatter()
     
+    var selectedDate: Date = Date() {
+        didSet {
+            formatter.dateFormat = "dd-MM-yyyy"
+            print("🟢 Date Selected = \(formatter.string(from: selectedDate))")
+            
+        }
+    }
+    
     private let headerView: UIView = {
         let view = UIView()
         view.backgroundColor = .blue
@@ -87,7 +95,6 @@ extension MainViewController: FSCalendarDataSource {
 extension MainViewController: FSCalendarDelegate {
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        formatter.dateFormat = "dd-MMM-yyyy"
-        print("🟢 Date Selected = \(formatter.string(from: date))")
+        selectedDate = date
     }
 }
